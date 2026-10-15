@@ -6,8 +6,8 @@ Source folder: ApexPlanet-webdeveloper-internship.
 
 | Folder | Task name |
 | --- | --- |
-| [task-1](task-1/) | Basics of Web Development |
-| [task-2](task-2/) | Basics of Web Development |
-| [task-3](task-3/) | Advanced Styling and JavaScript |
-| [task-4](task-4/) | My Portfolio |
-| [task-5](task-5/) | CAPSTONE |
+| [Task 1 - Basics of Web Development](Task%201%20-%20Basics%20of%20Web%20Development/) | Basics of Web Development |
+| [Task 2 - Basics of Web Development](Task%202%20-%20Basics%20of%20Web%20Development/) | Basics of Web Development |
+| [Task 3 - Advanced Styling and JavaScript](Task%203%20-%20Advanced%20Styling%20and%20JavaScript/) | Advanced Styling and JavaScript |
+| [Task 4 - My Portfolio](Task%204%20-%20My%20Portfolio/) | My Portfolio |
+| [Task 5 - CAPSTONE](Task%205%20-%20CAPSTONE/) | CAPSTONE |
