@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">CAPSTONE</div>
+        <nav>
+            <a href="#capstone-home">Home</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#optimizer">Performance</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Capstone Project Home -->
+        <section id="capstone-home" class="card full-width hero">
+            <h1>CAPSTONE PROJECT</h1>
+            <p>Integrating HTML, CSS, and JavaScript into a fully optimized, responsive web application.</p>
+        </section>
+
+        <!-- Section 2: Interactive Dashboard / App -->
+        <section id="dashboard" class="card">
+            <h2>Interactive Task Manager</h2>
+            <p>High-performance state management with local persistence.</p>
+            <div class="input-group">
+                <input type="text" id="capstoneInput" placeholder="Add capstone goal...">
+                <button id="addCapstoneBtn">Add Goal</button>
+            </div>
+            <ul id="capstoneList"></ul>
+        </section>
+
+        <!-- Section 3: Optimized Media & Lazy Loading -->
+        <section id="optimizer" class="card">
+            <h2>Performance & Lazy Loading</h2>
+            <p>Images below use native lazy loading to minimize initial HTTP requests and improve load times.</p>
+            <div class="image-container">
+                <!-- Lazy loaded image asset -->
+                <img src="https://picsum.photos/id/1015/600/300" alt="Optimized Asset" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CAPSTONE PROJECT</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
