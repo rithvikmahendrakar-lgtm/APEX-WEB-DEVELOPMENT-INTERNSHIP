@@ -67,7 +67,7 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
     localStorage.setItem('dm_messages', JSON.stringify(messages));
 
     e.target.reset();
-    formMsg.textContent = 'Message sent successfully! Thank you.';
+    formMsg.textContent = 'Message saved in this browser only; it was not sent.';
     formMsg.className = 'form-msg success';
 });
 
