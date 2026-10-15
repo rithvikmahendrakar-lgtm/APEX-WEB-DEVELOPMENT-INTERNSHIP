@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexPlanet Internship - Task 2: Basics of Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card">
+            <h2>Interactive Contact Form</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" placeholder="name@example.com">
+                    <span id="emailError" class="error"></span>
+                </div>
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+        <div class="card">
+            <h2>Dynamic To-Do List</h2>
+            <div class="todo-input-group">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button id="addTaskBtn">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let isValid = true;
+            nameError.textContent = '';
+            emailError.textContent = '';
+            if (nameInput.value.trim() === '') {
+                nameError.textContent = 'Name field cannot be left blank.';
+                isValid = false;
+            }
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (emailInput.value.trim() === '') {
+                emailError.textContent = 'Email field cannot be left blank.';
+                isValid = false;
+            } else if (!emailRegex.test(emailInput.value.trim())) {
+                emailError.textContent = 'Please enter a valid email address format.';
+                isValid = false;
+            }
+            if (isValid) {
+                alert('Form validated and submitted successfully!');
+                contactForm.reset();
+            }
+        });
+
+        const taskInput = document.getElementById('taskInput');
+        const addTaskBtn = document.getElementById('addTaskBtn');
+        const taskList = document.getElementById('taskList');
+        addTaskBtn.addEventListener('click', function() {
+            const taskText = taskInput.value.trim();
+            if (taskText === '') return;
+            const li = document.createElement('li');
+            li.textContent = taskText;
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Remove';
+            deleteBtn.addEventListener('click', function() {
+                taskList.removeChild(li);
+            });
+            li.appendChild(deleteBtn);
+            taskList.appendChild(li);
+            taskInput.value = '';
+        });
+    </script>
+</body>
+</html>
