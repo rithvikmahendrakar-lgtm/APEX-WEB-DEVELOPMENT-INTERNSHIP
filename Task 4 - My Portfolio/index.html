@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Kumar Mistry | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav>
+        <a href="#home" class="logo">&lt;Dev /&gt;</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#todo">To-Do App</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+        <div class="profile-pic">
+            <img src="C:\Users\mrdev\OneDrive\DEVELOP\ApexPlanet-webdeveloper-internship\task-4\1791024940775.png" alt="Dev Kumar Mistry"
+                 onerror="this.src='https://ui-avatars.com/api/?name=Dev+Kumar+Mistry&size=200&background=6c5ce7&color=fff&bold=true'">
+        </div>
+        <h1>Hi, I'm <span>Dev Kumar Mistry</span></h1>
+        <p class="tagline">A passionate <span class="typing" id="typing"></span></p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+            <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="section-sub">Get to know me better</p>
+        <div class="about-card">
+            <p>Hey! I'm <strong>Dev Kumar Mistry</strong>, a developer and tech enthusiast who loves building interactive web experiences. I work with <strong>HTML, CSS &amp; JavaScript</strong> to create projects that are fast, responsive, and user-friendly — including apps with <strong>data persistence using localStorage</strong> and dynamic filtering interfaces.</p>
+            <br>
+            <p><strong>📍 Location:</strong> India</p>
+            <p><strong>📞 Contact:</strong> +91 76709 43781</p>
+            <p><strong>💼 Focus:</strong> Web Development &amp; Cyber Security</p>
+            <p><strong>🎯 Goal:</strong> Build impactful projects &amp; grow as a full-stack developer</p>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <p class="section-sub">Technologies I work with</p>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
+            <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+            <div class="skill-card"><i class="fas fa-database"></i><h3>localStorage</h3></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+            <div class="skill-card"><i class="fab fa-github"></i><h3>GitHub</h3></div>
+            <div class="skill-card"><i class="fas fa-mobile-screen"></i><h3>Responsive</h3></div>
+            <div class="skill-card"><i class="fas fa-shield-halved"></i><h3>Cyber Security</h3></div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <p class="section-sub">Real, working applications — try them below!</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <i class="fas fa-list-check"></i>
+                <h3>To-Do List &amp; Notes App</h3>
+                <p>A full-featured task manager with priorities, filters, edit &amp; delete, plus a notes panel. All data persists using <strong>localStorage</strong>.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">localStorage</span>
+                </div>
+                <a href="#todo" class="project-link"><i class="fas fa-play"></i> Try it live →</a>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-filter"></i>
+                <h3>Product Filter &amp; Sort</h3>
+                <p>An interactive product page with live search, category filters, a price-range slider, and sorting by price, rating, or name.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">DOM</span>
+                </div>
+                <a href="#products" class="project-link"><i class="fas fa-play"></i> Try it live →</a>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-globe"></i>
+                <h3>Personal Portfolio</h3>
+                <p>This website! Fully responsive with a mobile menu, typing animation, contact form validation, and a consistent design system.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Responsive</span>
+                </div>
+                <a href="https://github.com/DEV08-cybr" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TO-DO APP ===================== -->
+    <section id="todo">
+        <h2 class="section-title">To-Do &amp; <span>Notes</span></h2>
+        <p class="section-sub">Your data is saved automatically in localStorage — refresh and see!</p>
+
+        <div class="app-container">
+            <!-- TASKS -->
+            <div class="app-card">
+                <h2><i class="fas fa-list-check"></i> My Tasks</h2>
+                <div class="input-row">
+                    <input type="text" class="task-input" id="taskInput" placeholder="What needs to be done?">
+                    <select id="prioritySelect">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <button class="btn btn-primary" id="addTaskBtn"><i class="fas fa-plus"></i> Add</button>
+                </div>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+                <ul class="task-list" id="taskList"></ul>
+                <div class="task-footer">
+                    <span id="taskCount">0 tasks left</span>
+                    <button id="clearCompleted"><i class="fas fa-broom"></i> Clear Completed</button>
+                </div>
+            </div>
+
+            <!-- NOTES -->
+            <div class="app-card">
+                <h2><i class="fas fa-note-sticky"></i> Quick Notes</h2>
+                <textarea class="note-input" id="noteInput" placeholder="Write a note..."></textarea>
+                <button class="btn btn-primary" id="addNoteBtn"><i class="fas fa-plus"></i> Add Note</button>
+                <div class="notes-grid" id="notesGrid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PRODUCTS ===================== -->
+    <section id="products">
+        <h2 class="section-title">Product <span>Store</span></h2>
+        <p class="section-sub">Filter by category &amp; price · Sort by price, rating or name</p>
+
+        <div class="toolbar">
+            <div class="toolbar-row">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                </div>
+                <div class="sort-box">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low → High</option>
+                        <option value="price-high">Price: High → Low</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="name">Name: A → Z</option>
+                    </select>
+                </div>
+            </div>
+            <div class="toolbar-row">
+                <div class="cat-btns">
+                    <button class="cat-btn active" data-category="all">All</button>
+                    <button class="cat-btn" data-category="electronics">Electronics</button>
+                    <button class="cat-btn" data-category="fashion">Fashion</button>
+                    <button class="cat-btn" data-category="books">Books</button>
+                    <button class="cat-btn" data-category="home">Home</button>
+                </div>
+                <div class="range-box">
+                    <span>Max Price:</span>
+                    <input type="range" id="priceRange" min="0" max="5000" step="100" value="5000">
+                    <span id="priceValue">₹5,000</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="result-count" id="resultCount"></p>
+        <div class="products-grid" id="productGrid"></div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <p class="section-sub">Have a project in mind? Let's talk!</p>
+
+        <div class="contact-wrapper">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="cName">Your Name</label>
+                    <input type="text" id="cName" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="cEmail">Your Email</label>
+                    <input type="email" id="cEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="cMsg">Message</label>
+                    <textarea id="cMsg" placeholder="Write your message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <p class="form-msg" id="formMsg"></p>
+            </form>
+
+            <div class="connect-grid">
+                <a href="https://www.linkedin.com/in/dev-kumar-mistry-3a0030378/" target="_blank" class="connect-card linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Dev Kumar Mistry</p>
+                </a>
+                <a href="https://github.com/DEV08-cybr" target="_blank" class="connect-card github">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>@DEV08-cybr</p>
+                </a>
+                <a href="https://wa.me/917670943781" target="_blank" class="connect-card whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>+91 76709 43781</p>
+                </a>
+                <a href="https://www.instagram.com/itzur.dev__" target="_blank" class="connect-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@itzur.dev__</p>
+                </a>
+                <a href="tel:+917670943781" class="connect-card phone" style="grid-column: 1 / -1;">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Me</h3>
+                    <p>+91 76709 43781</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <p>Made with <span>❤</span> by Dev Kumar Mistry © <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
